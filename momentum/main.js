@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 errBlock.classList.remove('weatherError_show');   
                 weatherMetrics.classList.remove('weatherMetrics_none');             
                 weatherMetrics.classList.remove('city_text_hide');
+                localStorage.setItem('city', json.name); 
             } else {                
                 errBlock.textContent = json.message;
                 weatherMetrics.classList.add('weatherMetrics_none');
