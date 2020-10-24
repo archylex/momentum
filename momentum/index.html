@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Page</title>
+  <link rel="stylesheet" href="css/owfont-regular.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+<body>    
+    <div class="tintBg"></div>
+    <div class="contentWrapper"> 
+        <div class="reserveColumn">
+            <div class="weatherHeader">
+                <i class="weatherIcon owf"></i>
+                <div class="weatherInfo">
+                    <div class="cityBlock">
+                        <div class="cityText">What's your city?</div>
+                        <div class="city city_empty" contenteditable="true" spellcheck="false"></div>
+                    </div>
+                    <div class="weatherMetrics">
+                        <div class="weatherDescription"></div>
+                        <div class="temperature"></div>                        
+                        <div class="humidity"></div>
+                        <div class="windSpeed"></div>                        
+                    </div>
+                    <div class="weatherError"></div>
+                </div>
+            </div>
+        </div>
+        <div class="timeColumn">
+            <div class="date"></div>
+            <div class="clock"></div>
+        </div>
+        <div class="helloColumn">
+            <div class="greetingBlock">
+                <div class="hello_text">Hello, What's your name?</div>
+                <div class="greeting greeting_empty" contenteditable="true" spellcheck="false"></div>
+            </div>
+        </div>
+        <div class="quoteColumn">
+            <div class="quoteWrapper">
+                <div class="quoteBlock">
+                    <p class="quoteText"></p>
+                    <p class="quoteAuthor"></p>            
+                </div>
+                <button class="nextQuote">&#9654;</button>
+            </div>
+        </div>
+        <div class="focusColumn">
+            <div class="focusBlock">
+                <div class="focusText">What's your focus for today?</div>
+                <div class="focus focus_empty" contenteditable="true" spellcheck="false"></div>
+            </div>
+        </div>
+        <div class="buttonColumn">
+            <button class="nextImage">&#9654;</button>
+        </div>
+        <div class="reserveColumn"></div>
+    </div>
+</body>
+</html>
