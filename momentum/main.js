@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const imageArray = [];
     let slideCounter = 0; 
     let currentHour;   
+    
+    const docHeight = document.body.clientHeight;
+    body.style.height = docHeight + 'px';
+        
+    window.addEventListener('resize', () => {
+        const tintBg = document.querySelector('.tintBg');
+        body.style.height = docHeight + 'px';
+        tintBg.style.height = docHeight + 'px';                
+    });
 
     function updateTime() {
         let currentDate = new Date();    
