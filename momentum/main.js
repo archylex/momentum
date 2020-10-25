@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateGreeting(cDate) {
-        greeting.textContent = `${greetingTemplate[ (cDate.getHours - cDate.getHours % 6) / 6 ]}, ${localStorage.getItem('name')}.`;
+        greeting.textContent = `${greetingTemplate[ (cDate.getHours() - cDate.getHours() % 6) / 6 ]}, ${localStorage.getItem('name')}.`;
     }
 
     function updateImage(src) {        
