@@ -23,13 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let slideCounter = 0; 
     let currentHour;   
     
+    const tintBg = document.querySelector('.tintBg');
     const docHeight = document.body.clientHeight;
     body.style.height = docHeight + 'px';
         
-    window.addEventListener('resize', () => {
-        const tintBg = document.querySelector('.tintBg');
-        body.style.height = docHeight + 'px';
-        tintBg.style.height = docHeight + 'px';                
+    window.addEventListener('resize', () => {        
+        if (document.body.clientWidth < 768) {
+            body.style.height = docHeight + 'px';
+            tintBg.style.height = docHeight + 'px';
+        } else {
+            body.style.height = '100vh';
+            tintBg.style.height = '100vh';
+        }               
     });
 
     function updateTime() {
