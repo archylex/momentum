@@ -102,8 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {                
                 errBlock.textContent = json.message;
                 weatherMetrics.classList.add('weatherMetrics_none');
-                errBlock.classList.add('weatherError_show');                 
-                weatherMetrics.classList.add('city_text_hide');             
+                errBlock.classList.add('weatherError_show');   
+                if (localStorage.getItem('city') !== null)
+                    weatherMetrics.classList.add('city_text_hide');             
             }
         } catch (e) {
             console.error(e);
