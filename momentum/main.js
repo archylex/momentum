@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentHour !== currentDate.getHours()) {
             currentHour = currentDate.getHours();
+            slideCounter = currentHour;
             nextImage();   
             updateGreeting(currentDate);                  
         }                        
