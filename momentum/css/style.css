@@ -438,6 +438,16 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 890px) {
+    .date {
+        font-size: 35px;
+    }
+
+    .clock {
+        font-size: 70px;
+    }
+}
+
 @media (max-width: 760px) {
     .weatherHeader {
         position: relative;
